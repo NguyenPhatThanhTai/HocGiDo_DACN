@@ -15,8 +15,8 @@ namespace HocGiDo_DACN.Controllers
         private static readonly HttpClient client = new HttpClient();
         public async Task<ActionResult> Index()
         {
-            var responseString = await client.GetStringAsync("https://api.covid19api.com/countries");
-            var objResponse1 = JsonConvert.DeserializeObject<List<test>>(responseString);
+            var responseString = await client.GetStringAsync("http://diepquangduc-001-site1.etempurl.com/api/khoahoc");
+            var objResponse1 = JsonConvert.DeserializeObject<khoahoc>(responseString);
             //var result = JsonConvert.DeserializeObject<test>(responseString);
             ViewBag.res = objResponse1;
             return View();

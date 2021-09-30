@@ -30,7 +30,32 @@
     </div>
 </div>
 
-@foreach (var items in ViewBag.res)
+@{ var model1 = ViewBag.res;}
+
+@foreach (var items in model1.KhoaHoc)
 {
-    <h3>@items.Country</h3>
+    <h3>@items.MoTaKH</h3>
 }
+
+
+@* // Import the functions you need from the SDKs you need
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBHnpucTHLw8GIPvKDhtCH7qcOlIw0J4ME",
+      authDomain: "hocgido-feedback.firebaseapp.com",
+      projectId: "hocgido-feedback",
+      storageBucket: "hocgido-feedback.appspot.com",
+      messagingSenderId: "28173697410",
+      appId: "1:28173697410:web:5a6c7c2ff074a7377ccf9b",
+      measurementId: "G-VH8NWR86C6"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app); *@

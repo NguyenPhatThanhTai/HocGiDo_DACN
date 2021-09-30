@@ -7,8 +7,10 @@ namespace HocGiDo_DACN.Models
 {
     public class test
     {
-        public string Country { get; set; }
-        public string Slug { get; set; }
-        public string ISO2 { get; set; }
+        public string MaKH { get; set; }
+        public string TenKH { get; set; }
+        public string MoTaKH { get; set; }
+
+        public string LuotDK { get; set; }
     }
 }
